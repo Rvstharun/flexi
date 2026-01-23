@@ -41,7 +41,47 @@ src/
 └── index.css                   # Global styles
 ```
 
-## Installation
+## Components Overview
+
+### Core Blog Components
+- **BlogPostItem** - Displays a single blog post in a list with preview
+- **BlogPostList** - Renders a list of all blog posts
+- **BlogPostDetail** - Shows the full content of a single blog post
+- **BlogPostForm** - Form for creating and editing blog posts with validation
+
+### User Interaction Components
+- **DeleteButton** - Red button to trigger deletion
+- **ConfirmationDialog** - Modal dialog for confirming deletions with accessibility support
+- **Comment** - Individual comment display with avatar, name, date, and text
+- **CommentList** - Displays all comments for a blog post
+- **CommentForm** - Form for users to add new comments with validation
+
+### Navigation & Layout Components
+- **NavBar** - Fixed navigation bar with logo, links, and mobile hamburger menu
+- **Layout** - Main layout wrapper providing consistent structure across pages
+
+### Search Components
+- **SearchBar** - Search input with dynamic search and debouncing
+- **SearchResults** - Displays search results with highlighted matching terms and content snippets
+
+## Key Features
+
+### Blog Post Management
+- View individual blog posts with full details
+- Create new blog posts with validation
+- Edit existing blog posts
+- Delete blog posts with confirmation
+
+### User Engagement
+- Add comments to blog posts
+- View all comments with metadata (author, date, text)
+- Comment form with character limit and validation
+
+### Search Functionality
+- Real-time search across post titles and content
+- Search term highlighting in results
+- Case-insensitive search
+- Result count and snippets with context
 
 1. Clone the repository
 2. Install dependencies:
