@@ -7,21 +7,38 @@ A modern, fast blog application built with React and Vite. This project showcase
 - ⚡ Lightning-fast development with Vite
 - ⚙️ Hot Module Replacement (HMR) for instant updates
 - 📝 Dynamic blog post listing and display
-- 🎨 Responsive design with CSS styling
-- 🔍 ESLint configuration for code quality
-- 🎯 Component-based architecture
+- 📖 View individual blog posts with full details
+- ✏️ Create and edit blog posts with form validation
+- 🗑️ Delete blog posts with confirmation dialog
+- 🧭 Responsive navigation and layout system
+- 💬 Comment system for user engagement
+- 🔍 Advanced search functionality with highlighting
+- 🎨 Fully responsive design (Desktop, Tablet, Mobile)
+- ♿ Comprehensive accessibility support
+- 🎯 Component-based architecture with CSS modules
 
 ## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── BlogPostItem/       # Individual blog post component
-│   ├── BlogPostList/       # Blog list display component
-├── assets/                 # Images and media files
-├── App.jsx                 # Main application component
-├── main.jsx                # Application entry point
-└── index.css               # Global styles
+│   ├── BlogPostItem/           # Individual blog post display
+│   ├── BlogPostList/           # Blog list with all posts
+│   ├── BlogPostDetail/         # Full blog post view (Challenge 2)
+│   ├── BlogPostForm/           # Create/edit blog posts (Challenge 3)
+│   ├── DeleteButton/           # Delete action button (Challenge 4)
+│   ├── ConfirmationDialog/     # Delete confirmation dialog (Challenge 4)
+│   ├── NavBar/                 # Navigation bar (Challenge 5)
+│   ├── Layout/                 # Main layout wrapper (Challenge 5)
+│   ├── Comment/                # Single comment display (Challenge 6)
+│   ├── CommentList/            # Comments list (Challenge 6)
+│   ├── CommentForm/            # Add comment form (Challenge 6)
+│   ├── SearchBar/              # Search input field (Challenge 7)
+│   └── SearchResults/          # Search results display (Challenge 7)
+├── assets/                     # Images and media files
+├── App.jsx                     # Main application component
+├── main.jsx                    # Application entry point
+└── index.css                   # Global styles
 ```
 
 ## Installation
