@@ -83,6 +83,8 @@ src/
 - Case-insensitive search
 - Result count and snippets with context
 
+## Installation
+
 1. Clone the repository
 2. Install dependencies:
    ```bash
@@ -112,10 +114,30 @@ Preview the production build:
 npm run preview
 ```
 
+## Responsive Design
+
+All components are fully responsive and optimized for:
+- **Desktop** (1200px and above) - Full layout with optimal spacing
+- **Tablet** (769px to 1199px) - Adjusted layout and typography
+- **Mobile** (up to 768px) - Single column layout with touch-friendly elements
+
+## Accessibility Features
+
+- Semantic HTML elements for better structure
+- ARIA attributes for screen reader support
+- Keyboard navigation support
+- Focus states for interactive elements
+- Form validation with clear error messages
+- Proper contrast ratios for readability
+- Alt text for images
+- Modal focus management
+
 ## Tech Stack
 
 - **React** - UI library
+- **React Router DOM** - Client-side routing
 - **Vite** - Build tool and dev server
+- **CSS Modules** - Scoped styling
 - **ESLint** - Code quality tool
 - **Babel/SWC** - JavaScript transpiler for Fast Refresh
 
@@ -125,6 +147,15 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Best Practices Implemented
+
+- **Component Reusability** - Modular, single-responsibility components
+- **State Management** - React hooks for local state management
+- **Performance** - Debounced search, optimized re-renders
+- **Error Handling** - Form validation and user feedback
+- **Accessibility** - WCAG compliant components
+- **Responsive** - Mobile-first approach
 
 ## ESLint Configuration
 
