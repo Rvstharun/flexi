@@ -1,0 +1,137 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Arial', 'Roboto', sans-serif;
+}
+
+.dialog {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+  padding: 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.description {
+  font-size: 16px;
+  color: #666666;
+  margin: 0 0 30px 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.cancelButton,
+.confirmButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  font-family: 'Arial', 'Roboto', sans-serif;
+  min-width: 100px;
+}
+
+.cancelButton {
+  background-color: #CCCCCC;
+  color: #000000;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background-color: #B3B3B3;
+  transform: translateY(-2px);
+}
+
+.cancelButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.confirmButton {
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+.confirmButton:hover:not(:disabled) {
+  background-color: #CC0000;
+  transform: translateY(-2px);
+}
+
+.confirmButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.cancelButton:focus,
+.confirmButton:focus {
+  outline: 2px solid #007BFF;
+  outline-offset: 2px;
+}
+
+.cancelButton:disabled,
+.confirmButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Mobile View (up to 768px) */
+@media (max-width: 768px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .dialog {
+    width: 100%;
+    max-width: none;
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: stretch;
+  }
+
+  .cancelButton,
+  .confirmButton {
+    width: 100%;
+    min-width: unset;
+    min-height: 44px;
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+}
